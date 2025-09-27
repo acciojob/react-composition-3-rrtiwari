@@ -5,20 +5,24 @@ import "./Tooltip.css";
 
 function App() {
   return (
-    <div className="App">
-      <Tooltip text="Tooltip for heading">
-        <h2>Hover over heading</h2>
+    <div className="App" style={{ padding: "50px", textAlign: "center" }}>
+      <Tooltip text="This is a tooltip">
+        <h2>Hover over me</h2>
       </Tooltip>
 
-      <Tooltip text="Tooltip for paragraph">
-        <p>Hover over paragraph</p>
-      </Tooltip>
-
-      <Tooltip text="Tooltip for span">
-        <span>Hover over span</span>
+      <Tooltip text="This is another tooltip">
+        <p>Hover over me to see another tooltip</p>
       </Tooltip>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+
+
+
