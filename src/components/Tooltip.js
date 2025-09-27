@@ -1,6 +1,5 @@
 
 import React from "react";
-import "./Tooltip.css";
 
 export default function Tooltip({ text, children }) {
   return React.cloneElement(children, {
@@ -13,6 +12,7 @@ export default function Tooltip({ text, children }) {
     ),
   });
 }
+
 
 
 
