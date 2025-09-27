@@ -1,24 +1,21 @@
+
 import React from "react";
-import "./../styles/App.css";
 import Tooltip from "./Tooltip";
+import "./Tooltip.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>React Tooltip Demo</h1>
-
-      <Tooltip text="This is a tooltip for text 1">
-        <p>Hover over this text 1</p>
+      <Tooltip text="Tooltip for heading">
+        <h2>Hover over heading</h2>
       </Tooltip>
 
-      <Tooltip text="Another helpful tooltip here">
-        <button>Hover over this button</button>
+      <Tooltip text="Tooltip for paragraph">
+        <p>Hover over paragraph</p>
       </Tooltip>
 
-      <Tooltip text="Tooltips make UI better!">
-        <span style={{ color: "blue", cursor: "pointer" }}>
-          Hover over this span
-        </span>
+      <Tooltip text="Tooltip for span">
+        <span>Hover over span</span>
       </Tooltip>
     </div>
   );
