@@ -1,0 +1,36 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltiptext {
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: red;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px 0px;
+}
