@@ -3,8 +3,8 @@
   display: inline-block;
   cursor: pointer;
 }
-.tooltip .tooltiptext {
-  visibility: hidden;
+
+.tooltiptext {
   position: absolute;
   bottom: 125%;
   left: 50%;
@@ -15,7 +15,4 @@
   border-radius: 4px;
   white-space: nowrap;
   z-index: 1;
-}
-.tooltip:hover .tooltiptext {
-  visibility: visible; 
 }
