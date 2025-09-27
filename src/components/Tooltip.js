@@ -12,12 +12,18 @@ function Tooltip({ text, children }) {
     children: (
       <>
         {children.props.children}
-        {visible && <div className="tooltiptext">{text}</div>}
+        <div
+          className="tooltiptext"
+          style={{ opacity: visible ? 1 : 0 }}
+        >
+          {text}
+        </div>
       </>
     ),
   });
 }
 
 export default Tooltip;
+
 
 
