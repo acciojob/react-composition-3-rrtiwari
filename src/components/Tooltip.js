@@ -1,4 +1,5 @@
 
+
 import React, { useState } from "react";
 import "./Tooltip.css";
 
@@ -19,27 +20,14 @@ function Tooltip({ text, children }) {
     callIfFunc(children.props && children.props.onMouseLeave, e);
   };
 
-  const handleMouseOver = (e) => {
-    setVisible(true);
-    callIfFunc(children.props && children.props.onMouseOver, e);
-  };
-
-  const handleMouseOut = (e) => {
-    setVisible(false);
-    callIfFunc(children.props && children.props.onMouseOut, e);
-  };
-
-  const combinedClass =
-    (children.props && children.props.className
-      ? children.props.className + " "
-      : "") + "tooltip";
+  const mergedClass =
+    (children.props && children.props.className ? children.props.className + " " : "") +
+    "tooltip";
 
   return React.cloneElement(children, {
-    className: combinedClass.trim(),
+    className: mergedClass.trim(),
     onMouseEnter: handleMouseEnter,
     onMouseLeave: handleMouseLeave,
-    onMouseOver: handleMouseOver,
-    onMouseOut: handleMouseOut,
     children: (
       <>
         {children.props && children.props.children}
